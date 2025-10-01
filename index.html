@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyril Katua — Portfolio</title>
+  <meta name="description" content="Cyril Katua — Software Engineer Portfolio" />
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Splash Logo -->
+  <div id="splash" class="logo-container" aria-hidden="true">
+    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="main" points="100,10 190,55 190,145 100,190 10,145 10,55" stroke="#fff" stroke-width="3" fill="none"/>
+      <polygon class="outline" points="100,10 190,55 190,145 100,190 10,145 10,55" stroke="#00aaff" stroke-width="2" fill="none" stroke-dasharray="480" stroke-dashoffset="96"/>
+      <text x="100" y="105" text-anchor="middle" style="font-family:Poppins,sans-serif;font-weight:700;">
+        <tspan x="86" y="92" style="font-size:38px">C</tspan>
+        <tspan x="118" y="112" style="font-size:34px">K</tspan>
+      </text>
+    </svg>
+  </div>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="hero">
+      <h1>Hi, I’m <span class="highlight">Cyril Katua</span></h1>
+      <p class="tag">Software Engineer — building web & CLI apps with JavaScript, Python, React, Node.js, and Django.</p>
+      <div class="cta">
+        <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
+        <button class="btn" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">Skills</button>
+        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>Motivated software engineer with hands-on experience in JavaScript, Python, React, Node.js, and Django — plus familiarity with additional languages and tools across web and CLI development. I enjoy turning complex problems into clean, functional solutions while keeping design simple and user-friendly.</p>
+        <p><em>“Explorer of Ideas, Writer of Stories, and Builder of Solutions.”</em></p>
+        <div class="socials">
+          <a href="https://github.com/Katua007" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/cyril-katua-919296355" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:katuacyril@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2>💻 Technical Skills</h2>
+      <div class="carousel-container">
+        <div class="skill-carousel" data-direction="left">
+          <div class="skill-badge tech">JavaScript</div>
+          <div class="skill-badge tech">Python</div>
+          <div class="skill-badge tech">React</div>
+          <div class="skill-badge tech">Node.js</div>
+          <div class="skill-badge tech">Django</div>
+          <div class="skill-badge tech">SQL</div>
+          <div class="skill-badge tech">TypeScript</div>
+          <div class="skill-badge tech">HTML</div>
+          <div class="skill-badge tech">CSS</div>
+        </div>
+      </div>
+      
+      <h2>🛠️ Tools & Platforms</h2>
+      <div class="carousel-container">
+        <div class="skill-carousel" data-direction="right">
+          <div class="skill-badge tools">GitHub</div>
+          <div class="skill-badge tools">Docker</div>
+          <div class="skill-badge tools">AWS</div>
+          <div class="skill-badge tools">Firebase</div>
+          <div class="skill-badge tools">Figma</div>
+          <div class="skill-badge tools">Postman</div>
+          <div class="skill-badge tools">VS Code</div>
+          <div class="skill-badge tools">Heroku</div>
+        </div>
+      </div>
+      
+      <h2>🤝 Soft Skills</h2>
+      <div class="carousel-container">
+        <div class="skill-carousel vertical">
+          <div class="skill-badge soft">Problem-Solving</div>
+          <div class="skill-badge soft">Teamwork</div>
+          <div class="skill-badge soft">Creativity</div>
+          <div class="skill-badge soft">Adaptability</div>
+          <div class="skill-badge soft">Communication</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card-proj" data-delay="0">
+          <div class="proj-image-placeholder">🏨</div>
+          <h3>Reservelt — Hotel Booking Platform</h3>
+          <p class="proj-desc">Collaborative hotel booking platform with React & Node.js. Reduced booking steps by <strong>30%</strong> and handled <strong>500+ concurrent users</strong>.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/Clive-Nyaga/Reservelt" target="_blank" class="action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Code
+            </a>
+            <a href="https://reservelt.onrender.com/" target="_blank" class="action-btn demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Demo
+            </a>
+          </div>
+        </article>
+        <article class="card-proj" data-delay="80">
+          <div class="proj-image-placeholder">💼</div>
+          <h3>Jigsaw.io — Job Marketplace</h3>
+          <p class="proj-desc">Mobile-first job platform with skills-based discovery. Improved search performance by <strong>40%</strong> with optimized queries.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/Katua007/Jigsaw.io" target="_blank" class="action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Code
+            </a>
+            <a href="https://katua007.github.io/Jigsaw.io/" target="_blank" class="action-btn demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Demo
+            </a>
+          </div>
+        </article>
+        <article class="card-proj" data-delay="160">
+          <div class="proj-image-placeholder">🌍</div>
+          <h3>Glimpse Travels — Travel Platform</h3>
+          <p class="proj-desc">Modern travel documentation platform where adventurers share journeys, discover destinations, and connect with fellow travelers.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/Katua007/glimpse-travels" target="_blank" class="action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Code
+            </a>
+            <a href="https://glimpse-travels-git-main-katua007s-projects.vercel.app/" target="_blank" class="action-btn demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Demo
+            </a>
+          </div>
+        </article>
+        <article class="card-proj" data-delay="240">
+          <div class="proj-image-placeholder">💪</div>
+          <h3>Gym Booking System</h3>
+          <p class="proj-desc">Complete gym management system with member registration, class scheduling, and booking functionality for fitness centers.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">HTML</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/Katua007/Gym-Booking-System" target="_blank" class="action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+        <article class="card-proj" data-delay="320">
+          <div class="proj-image-placeholder">⚡</div>
+          <h3>CLI Recipe Manager</h3>
+          <p class="proj-desc">Python CLI with templating and local caching. Reduced recipe lookup time by <strong>2x</strong> with modular scripting.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">CLI</span>
+            <span class="tech-tag">SQLite</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/Katua007/CLI-Recipe-Manager" target="_blank" class="action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Cyril Katua — Built with HTML, CSS & JavaScript
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
